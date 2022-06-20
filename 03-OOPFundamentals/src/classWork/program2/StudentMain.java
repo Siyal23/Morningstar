@@ -8,6 +8,7 @@ public class StudentMain {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		Student sobj;
+		String name;
 		ArrayList<Student> arrObj=new ArrayList<Student>();
 		for(int i=0;i<1;i++) {
 			
@@ -15,8 +16,8 @@ public class StudentMain {
 			int id=sc.nextInt();
 			
 			System.out.println("Enter Name:");
-			String name=sc.nextLine();
-			sc.next();
+			name=sc.next();
+			sc.nextLine();
 			
 			System.out.println("Contact Number:");
 			long contactNo=sc.nextLong();
@@ -28,6 +29,7 @@ public class StudentMain {
 			System.out.println("Enter Fees:");
 			float fees=sc.nextFloat();
 			
+			System.out.println(name);
 			sobj=new Student(id,name,contactNo,course,fees);
 			
 			arrObj.add(sobj);

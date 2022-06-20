@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.morningstar.model.Student;
 
@@ -49,13 +51,30 @@ public class StudentDaoImpl implements StudentDao{
 		ResultSet rs=stmt.executeQuery(sql);
 		Student student=null;
 		if(rs.next()) {
-			int studId=rs.getInt("studentId");
+			int studId=rs.getInt("student_Id");
 			String studName=rs.getString("student_Name");
 			double studScore=rs.getDouble("Student_Score");
 			student=new Student(studId, studName, studScore);
 		}
 		stmt.close();
 		return student;
+	}
+
+	@Override
+	public List<Student> readAllStudents() throws SQLException {
+		List<Student> students=new ArrayList<>();
+		String sql="Select * FROM Student";
+		Statement stmt=connection.createStatement();
+		ResultSet rs=stmt.executeQuery(sql);
+		
+		while(rs.next()) {
+			int studId=rs.getInt("student_Id");
+			String studName=rs.getString("student_Name");
+			double studScore=rs.getDouble("Student_Score");
+			Student student=new Student(studId, studName, studScore);
+			students.add(student);
+		}
+		return students;
 	}
 
 }
