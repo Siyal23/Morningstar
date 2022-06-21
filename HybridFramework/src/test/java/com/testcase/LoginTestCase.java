@@ -12,7 +12,6 @@ public class LoginTestCase extends LibraryClass{
 	@BeforeMethod
 	public void launch() {
 		launchApplication("chrome","https://opensource-demo.orangehrmlive.com/");
-		
 	}
 	
 	@Test

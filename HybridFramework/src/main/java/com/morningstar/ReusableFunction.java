@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -46,9 +47,12 @@ public class ReusableFunction extends LibraryClass {
 	public void dropdown(WebElement element, String selectedvalue) {
 		Select select = new Select(element);
 		select.selectByVisibleText(selectedvalue);
-
 	}
-
+	
+	public void mouseMove(WebElement element) {
+		Actions action=new Actions(driver);
+		action.moveToElement(element).click().build().perform();
+	}
 	public void quit() {
 		driver.close();
 

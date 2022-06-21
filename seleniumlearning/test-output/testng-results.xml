@@ -1,23 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-17T16:56:05 IST" name="Suite" finished-at="2022-06-17T16:56:05 IST" duration-ms="40">
+  <suite started-at="2022-06-20T15:37:19 IST" name="Default suite" finished-at="2022-06-20T15:37:58 IST" duration-ms="39127">
     <groups>
-      <group name="smokeTesting">
-        <method signature="DependsOnGroups.testCase1()[pri:0, instance:com.morningstar.testNG.DependsOnGroups@2dde1bff]" name="testCase1" class="com.morningstar.testNG.DependsOnGroups"/>
-      </group> <!-- smokeTesting -->
-      <group name="regressionTesing">
-        <method signature="DependsOnGroups.testCase1()[pri:0, instance:com.morningstar.testNG.DependsOnGroups@2dde1bff]" name="testCase1" class="com.morningstar.testNG.DependsOnGroups"/>
-      </group> <!-- regressionTesing -->
     </groups>
-    <test started-at="2022-06-17T16:56:05 IST" name="Test" finished-at="2022-06-17T16:56:05 IST" duration-ms="40">
-      <class name="com.morningstar.testNG.DependsOnGroups">
-        <test-method signature="testCase1()[pri:0, instance:com.morningstar.testNG.DependsOnGroups@2dde1bff]" started-at="2022-06-17T16:56:05 IST" name="testCase1" finished-at="2022-06-17T16:56:05 IST" duration-ms="8" status="PASS">
+    <test started-at="2022-06-20T15:37:19 IST" name="Default test" finished-at="2022-06-20T15:37:58 IST" duration-ms="39127">
+      <class name="com.morningstar.testNG.DataTest_DataProvider">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.morningstar.testNG.DataTest_DataProvider@7ea9e1e2]" started-at="2022-06-20T15:37:19 IST" name="launchApp" finished-at="2022-06-20T15:37:27 IST" duration-ms="8222" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase1 -->
-      </class> <!-- com.morningstar.testNG.DependsOnGroups -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- launchApp -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.morningstar.testNG.DataTest_DataProvider@7ea9e1e2]" started-at="2022-06-20T15:37:27 IST" name="login" data-provider="Test Data" finished-at="2022-06-20T15:37:33 IST" duration-ms="6347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.morningstar.testNG.DataTest_DataProvider@7ea9e1e2]" started-at="2022-06-20T15:37:33 IST" name="launchApp" finished-at="2022-06-20T15:37:40 IST" duration-ms="6942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.morningstar.testNG.DataTest_DataProvider@7ea9e1e2]" started-at="2022-06-20T15:37:40 IST" name="login" data-provider="Test Data" finished-at="2022-06-20T15:37:42 IST" duration-ms="2194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[siyal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[siyal123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.morningstar.testNG.DataTest_DataProvider@7ea9e1e2]" started-at="2022-06-20T15:37:42 IST" name="launchApp" finished-at="2022-06-20T15:37:52 IST" duration-ms="9192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.morningstar.testNG.DataTest_DataProvider@7ea9e1e2]" started-at="2022-06-20T15:37:52 IST" name="login" data-provider="Test Data" finished-at="2022-06-20T15:37:58 IST" duration-ms="6184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[patil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[patil123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.morningstar.testNG.DataTest_DataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

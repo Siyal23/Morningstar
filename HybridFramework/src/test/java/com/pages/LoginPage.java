@@ -26,7 +26,5 @@ public class LoginPage extends LibraryClass {
 		pwd.sendKeys(pas);
 
 		Loginbutton.click();
-
 	}
-
 }
